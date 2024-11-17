@@ -1,0 +1,406 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+.nav-bar {
+    height: 2.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.logo {
+    height: 27px;
+    width: 107px;
+    background-image: url(./assets/Frame\ 993.png);
+    background-size: cover;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.options a:hover {
+    color: #1572D3;
+    text-decoration: underline;
+    scale: 1.05;
+}
+
+.sign-in-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-up a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    transition: 0.3s;
+}
+
+.sign-in-up a:hover {
+    color: #1572D3;
+    scale: 1.2;
+}
+
+.sign-up-btn {
+    height: 43px;
+    width: 143px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    max-height: 1rem;
+    display: none;
+}
+
+.hamburger .bar {
+    display: block;
+    height: 5px;
+    width: 35px;
+    background-color: #1572D3;
+    margin: 3px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* main page or front page */
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-text {
+    height: 10rem;
+    width: 25rem;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    padding: 0;
+}
+
+.main-text h2 {
+    font-size: 48px;
+    color: #242424;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.main-text h2 span {
+    color: #1572D3;
+}
+
+.main-text img {
+    height: 32.56px;
+    width: 131.34px;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+}
+
+.main-text p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* car backgrong circle design */
+
+.car-bg-img {
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* car image */
+
+.main-page-car-img {
+    position: absolute;
+    top: 11.3rem;
+    right: 0;
+}
+
+/* main page bottom info and Search div */
+
+.second-div {
+    height: 4.5rem;
+    width: 67.25rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding-left: 2rem;
+    padding-right: 0.75rem;
+    box-shadow: -5px 5px 5px #acacac5f;
+}
+
+.second-div .info-div {
+    display: flex;
+    position: relative;
+}
+
+.second-div .info-div .heading {
+    color: #3E3E3E;
+    margin: 0;
+    display: flex;
+}
+
+.second-div .info-div .paragraph {
+    color: #B6B6B6;
+    margin: 0;
+}
+
+.second-div .info-div .text-div {
+    margin-left: 1rem;
+}
+
+.search-btn {
+    height: 2.6rem;
+    width: 8.93rem;
+}
+
+/* secong page after scorlling down from main page */
+
+.second-page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.steps-container {
+    height: 25rem;
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+    margin-top: 1.5rem;
+    
+}
+
+.steps {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.steps-inner-img {
+    height: 7rem;
+    width: 7rem;
+}
+
+.steps-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+}
+
+.steps-container .how-it-work-btn {
+    width: 10rem;
+    font-weight: normal;
+}
+
+.second-page .company-container {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+}
+
+.second-page .company-container img {
+    height: 4.5rem;
+    width: 24rem;
+}
+
+.third-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.third-page .car-img {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.third-page .car-img .bg-design {
+    position: absolute;
+    top: 55%;
+    z-index: -1;
+}
+
+.third-page .car-img img {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.third-page .why-choose-us-info {
+    height: 100%;
+    width: 50%;
+    padding: 5rem 0;
+}
+
+.why-choose-us-text {
+    margin-top: 2rem;
+}
+
+.why-choose-us-info .why-container .why {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.why-choose-us-info .why-container .why .img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.why-choose-us-info .why-container .why .why-inner-text {
+    text-align: start;
+    width: 20rem;
+}
+
+.why-choose-us-info .why-container .why .why-inner-text p {
+    margin: 0;
+}
+
+.why-choose-us-info .why-container .why .why-inner-text .heading {
+    margin-bottom: 1.5rem;
+}
+
+.why-container {
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+
+/* for responsive */
+
+/* hamberger navbar */
+
+@media(max-width:1150px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-bar.active {
+        background-color: #3E3E3E;
+        height: 60px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        transition: 0.3s ease-in;
+    }
+
+    .nav-menu.active {
+        position: fixed;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #3E3E3E;
+        top: 60px;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .nav-menu.active .options {
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .nav-menu.active .options a{
+        color: white;
+    }
+
+    .nav-menu.active .sign-in-up {
+        width: 253px;
+        height: 39px;
+        border: 2px solid #1572D3;
+        border-radius: 50px;
+        margin: 10px;
+        background-color: #242424;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-menu.active .sign-in-up .sign-up-btn {
+        border-radius: 50px;
+        height: 39px;
+        width: 160px;
+    }
+
+    .nav-menu .sign-in-up a {
+        color: white;
+    }
+}
