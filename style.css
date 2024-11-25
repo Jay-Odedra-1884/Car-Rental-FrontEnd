@@ -14,7 +14,7 @@ html {
 
 .nav-bar {
     height: 2.6rem;
-    width: 100%;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +74,27 @@ html {
     width: 143px;
 }
 
+.sign-up-btn.active {
+
+}
+
+/* for sign in up overlay */
+
+.sign-overlay {
+    display: none;
+}
+
+.sign-overlay.active {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 85vh;
+    width: 100vw;
+    background-color: red;
+    z-index: 999;
+}
+
+/* continue */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -328,6 +349,7 @@ html {
 }
 
 
+
 /* for responsive */
 
 /* hamberger navbar */
@@ -356,11 +378,12 @@ html {
 
     .nav-menu {
         position: fixed;
-        left: -100%;
+        display: none;
         transition: 0.3s ease-in;
     }
 
     .nav-menu.active {
+        display: block;
         position: fixed;
         left: 0;
         display: flex;
@@ -402,5 +425,20 @@ html {
 
     .nav-menu .sign-in-up a {
         color: white;
+    }
+
+    .second-div .pickup-date, .second-div .return-date {
+        display: none;
+    }
+
+    .second-div {
+        width: 27rem;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
