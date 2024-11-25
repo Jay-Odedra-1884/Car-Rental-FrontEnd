@@ -4,6 +4,7 @@ let navBar = document.querySelector(".nav-bar");
 let navLinks = document.querySelector(".nav-link");
 let signUpBtn = document.querySelector(".sign-up-btn ");
 let signOverlay = document.querySelector(".sign-overlay");
+let signOverlayForm = document.querySelector(".sign-overlay-form");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -14,6 +15,10 @@ hamburger.addEventListener("click", () => {
 signUpBtn.addEventListener("click", () => {
     signOverlay.classList.toggle("active");
     signOverlay.classList.contains("active") ?  signUpBtn.innerHTML = "Close" :  signUpBtn.innerHTML = "Sign Up";
+});
+
+signOverlayForm.addEventListener("submit", (event) => {
+    event.preventDefault();
 })
 
 
