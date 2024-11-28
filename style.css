@@ -77,10 +77,10 @@ html {
 /* for sign in up overlay */
 
 .sign-overlay {
-    /* display: none; */
+    display: none;
 }
 
-.sign-overlay { /*need to set active at last*/
+.sign-overlay.active { 
     display: flex;
     justify-content: center;
     align-items: center;
