@@ -41,28 +41,46 @@
         <span class="bar"></span>
       </div>
     </header>
+    <!-- sign up overlay after onClick sign Up btn -->
     <div class="sign-overlay">
-      <form action="#" class="sign-overlay-form">
-        <div class="sign-overlay-container">
-          <button>Exit</button>
-          <h2>Sign up</h2>
-          <div class="sign-up-data">
-            <label>
-              <p>Email</p>
-              <input type="text" />
-            </label>
-            <label>
-              <p>Create a password</p>
-              <input type="text" />
-            </label>
-            <label>
-              <p>Confirm password</p>
-              <input type="text" />
-            </label>
+      <div class="sign-overlay-main-container">
+        <!-- sign up form -->
+        <form action="#" class="sign-overlay-form">
+          <div class="sign-overlay-container">
+            <div class="sign-overlay-exit-btn exit-btn"><i class="fa-solid fa-chevron-left"></i></div>
+            <h2>Sign up</h2>
+            <div class="sign-up-data">
+              <label>
+                <p>Email</p>
+                <input type="text" />
+              </label>
+              <label>
+                <p>Create a password</p>
+                <input type="text" />
+              </label>
+              <label>
+                <p>Confirm password</p>
+                <input type="text" />
+              </label>
+            </div>
+            <button type="submit">Log in</button>
           </div>
-          <button type="submit">Log in</button>
+        </form>
+        <!-- sign up side design div -->
+        <div class="sign-up-side-design">
+          <p class="sign-up-side-design-text text-2">Start your adventure by <span>signing up</span></p>
+         <div class="sign-up-options">
+          <div class="link-card">
+            <img src="./assets/Google logo.svg" alt="">
+            <p>Sign in with Google</p>
+          </div>
+          <div class="link-card">
+            <img src="./assets/Microsoft.svg" alt="">
+            <p>Sign in with Microsoft</p>
+          </div>
+         </div>
         </div>
-      </form>
+      </div>
     </div>
     <div class="main-page">
       <div class="first-div">
@@ -207,6 +225,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="rental-deals-page">
+      <div class="bg-1 rental-deals-text">POPULAR RENTAL DEALS</div>
     </div>
     <script src="app.js"></script>
   </body>

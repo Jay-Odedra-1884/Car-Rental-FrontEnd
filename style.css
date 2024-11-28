@@ -74,25 +74,69 @@ html {
     width: 143px;
 }
 
-.sign-up-btn.active {
-
-}
-
 /* for sign in up overlay */
 
 .sign-overlay {
-    display: none;
+    /* display: none; */
 }
 
-.sign-overlay.active {
-    display: block;
+.sign-overlay { /*need to set active at last*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
-    height: 85vh;
+    height: 100vh;
     width: 100vw;
-    background-color: red;
+    backdrop-filter: blur(10px);
     z-index: 999;
 }
+.sign-overlay-container {
+    position: relative;
+}
+
+.sign-overlay-main-container {
+    width: 55rem;
+    height: 45rem;
+    border-radius: 17px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-overlay-exit-btn {
+   position: absolute;
+   top: 2%;
+   left: 2%;
+}
+
+.sign-up-side-design {
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 46%;
+    border-radius: 33px 17px 17px 33px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-side-design-text {
+    position: absolute;
+    top: 16%;
+}
+
+.sign-up-side-design-text span {
+    color: #1572D3;
+}
+
+.sign-up-options {
+    position: absolute;
+    top: 71%;
+}
+
+
 
 /* continue */
 .nav-menu {
@@ -348,6 +392,20 @@ html {
     margin-top: 3.5rem;
 }
 
+
+/* rental deals page */
+
+.rental-deals-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.rental-deals-text {
+    width: 12rem;
+}
 
 
 /* for responsive */

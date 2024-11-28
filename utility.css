@@ -30,6 +30,17 @@
      background-color: #e0efff;
 }
 
+.exit-btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #D8DADC;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bg-1 {
     width: 9rem;
     padding: 0.7rem;
@@ -54,6 +65,13 @@
     margin-top: 1rem;
 }
 
+.text-2 {
+    font-size: 48px;
+    color: #242424;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
 .heading {
     font-weight: bold;
     font-size: 1.25rem;
@@ -62,4 +80,24 @@
 .des {
     margin: 0;
     opacity: 0.4;
+}
+
+.link-card {
+    width: 353px;
+    height: 54px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.link-card p {
+    margin-left: 12px;
+}
+
+.link-card img {
+    width: 20px;
+    height: 20px;
 }
