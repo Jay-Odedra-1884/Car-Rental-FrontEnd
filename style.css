@@ -70,8 +70,8 @@ html {
 }
 
 .sign-up-btn {
-    height: 43px;
-    width: 143px;
+    height: 2.68rem;
+    width: 8.9rem;
 }
 
 /* for sign in up overlay */
@@ -80,7 +80,7 @@ html {
     display: none;
 }
 
-.sign-overlay.active { 
+.sign-overlay.active { /*active class*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,18 +91,45 @@ html {
     backdrop-filter: blur(10px);
     z-index: 999;
 }
-.sign-overlay-container {
-    position: relative;
-}
+
 
 .sign-overlay-main-container {
     width: 55rem;
     height: 45rem;
-    border-radius: 17px;
+    border-radius: 1.06rem;
     box-shadow: 0 0 10px black;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+
+.sign-overlay-form {
+    height: 100%;
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;    
+}
+
+.sign-overlay-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign-up-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-login-btn {
+    width: 22.06rem;
+    padding:0.62rem;
 }
 
 .sign-overlay-exit-btn {
@@ -115,7 +142,7 @@ html {
     background-color: #D9D9D9;
     height: 100%;
     width: 46%;
-    border-radius: 33px 17px 17px 33px;
+    border-radius: 16.5rem 1.06rem 1.06rem 16.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -151,11 +178,11 @@ html {
 
 .hamburger .bar {
     display: block;
-    height: 5px;
-    width: 35px;
+    height: 0.31rem;
+    width: 2.18rem;
     background-color: #1572D3;
     margin: 3px;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -169,7 +196,7 @@ html {
 
 .main-text {
     height: 10rem;
-    width: 25rem;
+    width: 400px;
     position: absolute;
     top: 15rem;
     left: 10rem;
@@ -180,7 +207,7 @@ html {
     font-size: 48px;
     color: #242424;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .main-text h2 span {
@@ -188,21 +215,23 @@ html {
 }
 
 .main-text img {
-    height: 32.56px;
-    width: 131.34px;
+    height: 2.03rem;
+    width: 8.20rem;
     position: absolute;
     top: 75%;
     left: 65%;
 }
 
 .main-text p {
-    font-size: 18px;
+    font-size: 1.12rem;
     opacity: 0.7;
 }
 
 /* car backgrong circle design */
 
 .car-bg-img {
+    width: 35.87rem;
+    height: 50rem;
     opacity: 0.3;
     position: absolute;
     right: 0;
@@ -213,11 +242,12 @@ html {
 /* car image */
 
 .main-page-car-img {
+    width: 49.43rem;
+    height: 33.56rem;
     position: absolute;
     top: 11.3rem;
     right: 0;
 }
-
 /* main page bottom info and Search div */
 
 .second-div {
@@ -231,7 +261,7 @@ html {
     top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     padding-left: 2rem;
     padding-right: 0.75rem;
     box-shadow: -5px 5px 5px #acacac5f;
@@ -447,7 +477,7 @@ html {
         display: flex;
         flex-direction: column;
         background-color: #3E3E3E;
-        top: 60px;
+        top: 3.75rem;
         width: 100%;
         height: 50vh;
     }
@@ -499,4 +529,19 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .sign-up-side-design {
+        display: none;
+    }
+
+    .sign-overlay {
+        width: 393px;
+    }
+}
+
+@media (max-width:700px) {
+    
+html {
+    font-size: 8px;
+}
 }

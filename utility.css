@@ -3,7 +3,7 @@
 
 .btn {
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background-color: #1572D3;
     color: #ffffff;
     transition: 0.4s;
@@ -18,9 +18,9 @@
     background-color: #f0f5ff;
     border: none;
     color: #007bff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 0.62rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     font-weight: bold;
     transition:0.3s;
@@ -31,11 +31,11 @@
 }
 
 .exit-btn {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: white;
     border: 1px solid #D8DADC;
-    border-radius: 11px;
+    border-radius: 0.68rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,10 +66,10 @@
 }
 
 .text-2 {
-    font-size: 48px;
+    font-size: 3rem;
     color: #242424;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .heading {
@@ -83,21 +83,44 @@
 }
 
 .link-card {
-    width: 353px;
-    height: 54px;
+    width: 22.06rem;
+    height: 3.37rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .link-card p {
-    margin-left: 12px;
+    margin-left: 0.75rem;
 }
 
 .link-card img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.inp-container {
+    text-align: start;
+    display: block;
+    width: 100%;
+
+}
+
+.inp-container p {
+    opacity: 0.5;
+}
+
+.inp-container .inp-1 {
+
+    padding: 0px 0.62rem;
+    width: 22.06rem;
+    height: 3.5rem;
+    border-radius: 1.12rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-color: #D8DADC;
 }

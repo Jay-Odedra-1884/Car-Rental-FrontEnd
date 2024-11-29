@@ -47,38 +47,58 @@
         <!-- sign up form -->
         <form action="#" class="sign-overlay-form">
           <div class="sign-overlay-container">
-            <div class="sign-overlay-exit-btn exit-btn"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="sign-overlay-exit-btn exit-btn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
             <h2>Sign up</h2>
             <div class="sign-up-data">
-              <label>
+              <label class="inp-container">
                 <p>Email</p>
-                <input type="text" />
+                <input
+                  type="text"
+                  class="inp-1"
+                  placeholder="example@abc.com"
+                />
               </label>
-              <label>
+              <label class="inp-container">
                 <p>Create a password</p>
-                <input type="text" />
+                <input
+                  type="text"
+                  class="inp-1"
+                  placeholder="must be 8 characters"
+                />
               </label>
-              <label>
+              <label class="inp-container">
                 <p>Confirm password</p>
-                <input type="text" />
+                <input
+                  type="text"
+                  class="inp-1"
+                  placeholder="repeat password"
+                />
               </label>
             </div>
-            <button type="submit">Log in</button>
+            <div class="test">
+              <button type="submit" class="sign-up-login-btn btn">
+                Log in
+              </button>
+            </div>
           </div>
         </form>
         <!-- sign up side design div -->
         <div class="sign-up-side-design">
-          <p class="sign-up-side-design-text text-2">Start your adventure by <span>signing up</span></p>
-         <div class="sign-up-options">
-          <div class="link-card">
-            <img src="./assets/Google logo.svg" alt="">
-            <p>Sign in with Google</p>
+          <p class="sign-up-side-design-text text-2">
+            Start your adventure by <span>signing up</span>
+          </p>
+          <div class="sign-up-options">
+            <div class="link-card">
+              <img src="./assets/Google logo.svg" alt="" />
+              <p>Sign in with Google</p>
+            </div>
+            <div class="link-card">
+              <img src="./assets/Microsoft.svg" alt="" />
+              <p>Sign in with Microsoft</p>
+            </div>
           </div>
-          <div class="link-card">
-            <img src="./assets/Microsoft.svg" alt="">
-            <p>Sign in with Microsoft</p>
-          </div>
-         </div>
         </div>
       </div>
     </div>
