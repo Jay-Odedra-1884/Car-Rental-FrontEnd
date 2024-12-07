@@ -18,6 +18,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:10px;
     position: absolute;
     top: 40px;
     left: 50%;
@@ -100,7 +101,6 @@ html {
     box-shadow: 0 0 10px black;
     background-color: white;
     display: flex;
-    /* justify-content: space-between; */
     position: relative;
 }
 
@@ -119,6 +119,7 @@ html {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     align-items: center;
 }
 .sign-up-data {
@@ -142,7 +143,7 @@ html {
     background-color: #D9D9D9;
     height: 100%;
     width: 46%;
-    border-radius: 16.5rem 1.06rem 1.06rem 16.5rem;
+    border-radius: 2.06rem 1.06rem 1.06rem 2.06rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -162,7 +163,6 @@ html {
     position: absolute;
     top: 71%;
 }
-
 
 
 /* continue */
@@ -186,6 +186,82 @@ html {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+@media(max-width:1150px) {
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-bar.active {
+        background-color: #3E3E3E;
+        height: 60px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        display: none;
+        transition: 0.3s ease-in;
+    }
+
+    .nav-menu.active {
+        display: block;
+        position: fixed;
+        left: 0;
+        border-radius: 0 0 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #3E3E3E;
+        top: 3.75rem;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .nav-menu.active .options {
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .nav-menu.active .options a{
+        color: white;
+    }
+
+    .nav-menu.active .sign-in-up {
+        width: 253px;
+        height: 39px;
+        border: 2px solid #1572D3;
+        border-radius: 50px;
+        margin: 10px;
+        background-color: #242424;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-menu.active .sign-in-up .sign-up-btn {
+        border-radius: 50px;
+        height: 39px;
+        width: 160px;
+    }
+
+    .nav-menu .sign-in-up a {
+        color: white;
+    }
+}
+
 
 /* main page or front page */
 
@@ -422,98 +498,11 @@ html {
     margin-top: 3.5rem;
 }
 
-
-/* rental deals page */
-
-.rental-deals-page {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: red;
-}
-
-.rental-deals-text {
-    width: 12rem;
-}
-
-
 /* for responsive */
 
 /* hamberger navbar */
 
 @media(max-width:1150px) {
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-bar.active {
-        background-color: #3E3E3E;
-        height: 60px;
-    }
-
-    .nav-menu {
-        position: fixed;
-        display: none;
-        transition: 0.3s ease-in;
-    }
-
-    .nav-menu.active {
-        display: block;
-        position: fixed;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: #3E3E3E;
-        top: 3.75rem;
-        width: 100%;
-        height: 50vh;
-    }
-
-    .nav-menu.active .options {
-        height:100%;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        margin-top: 50px;
-    }
-
-    .nav-menu.active .options a{
-        color: white;
-    }
-
-    .nav-menu.active .sign-in-up {
-        width: 253px;
-        height: 39px;
-        border: 2px solid #1572D3;
-        border-radius: 50px;
-        margin: 10px;
-        background-color: #242424;
-        position: absolute;
-        bottom: 0;
-    }
-
-    .nav-menu.active .sign-in-up .sign-up-btn {
-        border-radius: 50px;
-        height: 39px;
-        width: 160px;
-    }
-
-    .nav-menu .sign-in-up a {
-        color: white;
-    }
 
     .second-div .pickup-date, .second-div .return-date {
         display: none;
@@ -539,9 +528,34 @@ html {
     }
 }
 
-@media (max-width:700px) {
-    
-html {
-    font-size: 8px;
+/* car rental deals page */
+
+
+.rental-deals-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    position: relative;
 }
+
+.rental-deals-text {
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+.car-options {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rent-btn {
+    width: 100%;
+    height: 40%;
 }

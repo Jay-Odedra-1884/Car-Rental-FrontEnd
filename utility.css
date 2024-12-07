@@ -124,3 +124,61 @@
     outline: none;
     background-color: #D8DADC;
 }
+
+/* card start */
+
+.car-card {
+    background-color: white;
+    width: 16rem;
+    height: 25.31rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 81.25%;
+    height: 38.27%;
+}
+
+.car-details {
+    height: 31.35%;
+    width: 81.25%;
+}
+
+.car-rating {
+    display: flex;
+    justify-content: center;
+    line-height: 0;
+    opacity: 0.7;
+    gap: 0.3rem;
+}
+
+.car-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.car-price p {
+    opacity: 0.6;
+}
+
+.car-price .price {
+    color: orange;
+    font-size: 1.2rem;
+}
+
+.rent-details {
+    width: 81.25%;
+    height: 30.38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card end */
