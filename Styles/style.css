@@ -535,17 +535,33 @@ html {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: red;
     position: relative;
+}
+
+.rental-deals-container {
+    position: relative;
+}
+
+.view-all-car-btn {
+    position: absolute;
+    bottom: 10%;
+    background: #1571d328;
+    border-radius: 0.5rem;
+}
+
+.view-all-car-btn button {
+    background: transparent;
+    color: #1572D3;
 }
 
 .rental-deals-text {
     width: 12rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .car-options {
     width: 70rem;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     overflow: auto;
@@ -555,7 +571,36 @@ html {
     transform: translate(-50%, -50%);
 }
 
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+.car-info .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-info .row .ele {
+    display: flex;
+    align-items: center ;
+    gap: 0.4rem;
+}
+
 .rent-btn {
     width: 100%;
     height: 40%;
 }
+

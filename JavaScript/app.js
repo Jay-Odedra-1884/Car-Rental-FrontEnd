@@ -6,6 +6,7 @@ let signUpBtn = document.querySelector(".sign-up-btn ");
 let signOverlay = document.querySelector(".sign-overlay");
 let signOverlayForm = document.querySelector(".sign-overlay-form");
 let signOverlayExitBtn = document.querySelector(".sign-overlay-exit-btn");
+let viewAllCarsBtn = document.querySelector(".view-all-car-btn");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -24,6 +25,10 @@ signOverlayExitBtn.addEventListener("click", () => {
 
 signOverlayForm.addEventListener("submit", (event) => {
     event.preventDefault();
+})
+
+viewAllCarsBtn.addEventListener("click", (event) => {
+    window.location.href = "./allcars.html"
 })
 
 
