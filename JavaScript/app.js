@@ -28,7 +28,9 @@ signOverlayForm.addEventListener("submit", (event) => {
 })
 
 viewAllCarsBtn.addEventListener("click", (event) => {
-    window.location.href = "./allcars.html"
+    window.location.href = "./allcars.html";
 })
+
+
 
 

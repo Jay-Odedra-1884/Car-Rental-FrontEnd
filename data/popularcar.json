@@ -1,0 +1,10 @@
+[
+    {
+        "name" : "BMW M3",
+        "rating" : {
+            "star" : 4.5,
+            "count" : 2093
+        },
+        "price" : 1800
+    }
+]

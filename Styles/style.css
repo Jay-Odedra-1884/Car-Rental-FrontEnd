@@ -18,7 +18,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    padding: 10px;
     position: absolute;
     top: 40px;
     left: 50%;
@@ -29,7 +29,6 @@ html {
 .logo {
     height: 27px;
     width: 107px;
-    background-image: url(./assets/Frame\ 993.png);
     background-size: cover;
 }
 
@@ -81,7 +80,8 @@ html {
     display: none;
 }
 
-.sign-overlay.active { /*active class*/
+.sign-overlay.active {
+    /*active class*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +95,7 @@ html {
 
 
 .sign-overlay-main-container {
-    width: 55rem;
+    width: 55%;
     height: 45rem;
     border-radius: 1.06rem;
     box-shadow: 0 0 10px black;
@@ -111,7 +111,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: start;    
+    text-align: start;
 }
 
 .sign-overlay-container {
@@ -122,6 +122,7 @@ html {
     gap: 2rem;
     align-items: center;
 }
+
 .sign-up-data {
     display: flex;
     flex-direction: column;
@@ -130,13 +131,13 @@ html {
 
 .sign-up-login-btn {
     width: 22.06rem;
-    padding:0.62rem;
+    padding: 0.62rem;
 }
 
 .sign-overlay-exit-btn {
-   position: absolute;
-   top: 2%;
-   left: 2%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
 }
 
 .sign-up-side-design {
@@ -160,6 +161,11 @@ html {
 }
 
 .sign-up-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     position: absolute;
     top: 71%;
 }
@@ -188,7 +194,7 @@ html {
 }
 
 @media(max-width:1150px) {
-    .hamburger{
+    .hamburger {
         display: block;
     }
 
@@ -229,14 +235,14 @@ html {
     }
 
     .nav-menu.active .options {
-        height:100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin-top: 50px;
     }
 
-    .nav-menu.active .options a{
+    .nav-menu.active .options a {
         color: white;
     }
 
@@ -260,6 +266,16 @@ html {
     .nav-menu .sign-in-up a {
         color: white;
     }
+
+    .sign-up-side-design {
+        display: none;
+    }
+    
+    .sign-overlay-main-container {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -280,7 +296,7 @@ html {
 }
 
 .main-text h2 {
-    font-size: 48px;
+    font-size: 3rem;
     color: #242424;
     margin: 0;
     margin-bottom: 2.5rem;
@@ -324,6 +340,7 @@ html {
     top: 11.3rem;
     right: 0;
 }
+
 /* main page bottom info and Search div */
 
 .second-div {
@@ -387,7 +404,7 @@ html {
     transform: translate(-50%, 0);
     align-items: center;
     margin-top: 1.5rem;
-    
+
 }
 
 .steps {
@@ -498,13 +515,25 @@ html {
     margin-top: 3.5rem;
 }
 
+@media(max-width:1150px) {
+    .third-page .car-img {
+        display: none;
+    }
+
+    .third-page {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* for responsive */
 
 /* hamberger navbar */
 
 @media(max-width:1150px) {
 
-    .second-div .pickup-date, .second-div .return-date {
+    .second-div .pickup-date,
+    .second-div .return-date {
         display: none;
     }
 
@@ -517,14 +546,6 @@ html {
         top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .sign-up-side-design {
-        display: none;
-    }
-
-    .sign-overlay {
-        width: 393px;
     }
 }
 
@@ -560,16 +581,25 @@ html {
 }
 
 .car-options {
-    width: 70rem;
+    width: 70vw;
+    height: 70vh;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     overflow: auto;
+    flex-wrap: wrap;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* 
+@media(max-width:1000px) {
+    .car-options {
+        width: 50rem;
+    }
+} */
 
 .card-img {
     display: flex;
@@ -595,7 +625,7 @@ html {
 
 .car-info .row .ele {
     display: flex;
-    align-items: center ;
+    align-items: center;
     gap: 0.4rem;
 }
 
@@ -604,3 +634,8 @@ html {
     height: 40%;
 }
 
+@media(max-width:450px) {
+    html {
+        font-size: 6px;
+    }
+}
